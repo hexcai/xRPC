@@ -17,36 +17,34 @@
 		android:orientation="vertical"
 		android:layout_below="@id/buttonLogin">
 
-		<Button
-			android:layout_height="wrap_content"
-			android:layout_width="match_parent"
-			android:text="Connect"
-			android:onClick="connect"
-			android:id="@+id/buttonConnect"/>
-
 		<LinearLayout
-			android:layout_height="wrap_content"
+			android:orientation="horizontal"
 			android:layout_width="match_parent"
-			android:orientation="horizontal">
+			android:layout_height="wrap_content">
 
-			<ImageButton
-				android:layout_height="40dp"
-				android:layout_width="40dp"
-				android:id="@+id/imageIcon"/>
-
-			<EditText
+			<Button
 				android:layout_height="wrap_content"
-				android:layout_width="match_parent"
-				android:hint="Activity name (leave empty to unset)"
-				android:id="@+id/editActivityName"/>
+				android:layout_width="wrap_content"
+				android:text="Connect"
+				android:onClick="connect"
+				android:id="@+id/buttonConnect"
+				android:layout_weight="1.0"/>
+
+			<Button
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="Set activity"
+				android:onClick="sendPresenceUpdate"
+				android:id="@+id/buttonSetActivity"
+				android:layout_weight="1.0"/>
 
 		</LinearLayout>
 
-        <EditText
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:id="@+id/editActivityState"
-            android:hint="Activity state"/>
+		<EditText
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:hint="Activity name (leave empty to unset)"
+			android:id="@+id/editActivityName"/>
 
 		<EditText
 			android:layout_height="wrap_content"
@@ -54,13 +52,24 @@
 			android:id="@+id/editActivityDetails"
 			android:hint="Activity details"/>
 
-		<Button
+		<EditText
 			android:layout_height="wrap_content"
 			android:layout_width="match_parent"
-			android:text="Set activity"
-			android:onClick="sendPresenceUpdate"
-			android:id="@+id/buttonSetActivity"/>
+			android:id="@+id/editActivityState"
+			android:hint="Activity state"/>
 
+		<EditText
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:id="@+id/editActivityLargeImage"
+			android:hint="Large image"/>
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/editActivitySmallImage"
+            android:hint="Small image"/>
+        
 		<ScrollView
 			android:layout_height="wrap_content"
 			android:layout_width="match_parent">

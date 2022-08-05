@@ -58,6 +58,7 @@ public class MainActivity extends Activity implements ServiceConnection, RPCCall
             public boolean shouldOverrideUrlLoading(WebView v, String url) {
                 Log.d("Web", "Attempt to enter " + url);
                 if (url.endsWith("/app")) {
+/*
                     webView.evaluateJavascript("javascript:window.localStorage.getItem('token');", new ValueCallback<String>() {
                             @Override
                             public void onReceiveValue(String s) {
@@ -65,8 +66,9 @@ public class MainActivity extends Activity implements ServiceConnection, RPCCall
                                 appendToLog("value = " + s);
                             }
                         });
-                    
+*/
                     webView.stopLoading();
+                    webView.setVisibility(View.GONE);
                     extractToken();
                     login(v);
                     

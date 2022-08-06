@@ -110,8 +110,6 @@ public class DiscordSocketClient extends WebSocketClient
                 heartbeatThr = new Thread(heartbeatRunnable);
                 heartbeatThr.start();
                 break;
-            default:
-                service.appendToLog("Received op " + opcode + ": " + (message.length() > 200 ? message.substring(0, 200) : message));
         }
     }
 

@@ -1,4 +1,4 @@
-![](https://media.discordapp.net/attachments/952081692099772418/1103106059318599832/1683071366075.png)
+![](https://media.discordapp.net/attachments/952081692099772418/1103112311549476946/1683071639714.png)
 # xRPC
 Custom Discord Mobile Rich Presence for Android, forked from [MRPC](https://github.com/khanhduytran0/MRPC)
 
